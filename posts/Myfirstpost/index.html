@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>王瑞的个人主页</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false},
+                {left: "\\(", right: "\\)", display: false},
+                {left: "\\[", right: "\\]", display: true}
+            ],
+            throwOnError: false
+        });
+    });
+    </script>
+</head>
+<body>
+    <div class="leftcolumn">
+    <div class="circle-clip" style="margin-top: 150px; margin-bottom: 30px; justify-self:center">
+        <img src="/assets/avatar.jpg">
+    </div>
+    <h4>Shoxquach的个人主页</h4>
+    <a href="https://github.com/Shoxquach"><img src="/assets/icon/github.png" width=30px style="margin:5px"></a>
+    <a href="mailto:2400012957@stu.pku.edu.cn"><img src="/assets/icon/mail.png" width="30px" style="margin:5px"></a>
+    <a href="https://space.bilibili.com/512336046"><img src="/assets/icon/bilibili.png" width="30px" style="margin:5px"></a>
+    <br>
+    <a href="/about">About</a><br>
+    /<br>
+    我是Shoxquach 王瑞
+    </div>
+    <div class="rightcolumn">
+        <div class="topnav">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/posts">Posts</a>
+        </div>
+        <div class="buttomcontent">
+            <div class="passage">
+            <h1>我的第一篇博客。</h1>
+            这是我的第一篇博客。<br>
+            图片测试：<br>
+            <img src="figure1.png" width=50%>  <br>
+            Latex测试：<br>
+            $e^{i\pi}=-1$.
+            $$
+            \Phi(x)=\frac1{2\pi}\int_{-\infty}^{x}\exp\{-\frac12x^2\}. \\
+            \left|\begin{matrix}
+                a & b \\
+                c & d \\
+            \end{matrix}\right| = ad - bc.
+            $$
+            Code测试：<br>
+            <code>int main()</code> <br>
+            <pre><div class="codeblock">int main() {
+printf("Hello world!");
+return 0;
+}</div></pre>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
